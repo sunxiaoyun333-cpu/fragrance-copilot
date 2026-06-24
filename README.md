@@ -30,6 +30,12 @@ into structured fragrance product profiles and TikTok marketing plans.
 
 The local app runs at `http://localhost:8501`.
 
+## Vercel
+
+The repository also includes a Flask web entrypoint under `api/` for Vercel.
+It reuses the same product profiling and marketing-plan services without
+requiring a long-running Streamlit server.
+
 ## Environment Variables
 
 - `OPENAI_API_KEY`
