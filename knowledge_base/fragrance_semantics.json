@@ -1,0 +1,22 @@
+{
+  "lavender": {
+    "emotion": ["calm", "peaceful", "sleepy", "relaxed"],
+    "scenes": ["bedtime routine", "bath time", "meditation"],
+    "tiktok_expression": "lavender-scented dreams"
+  },
+  "vanilla": {
+    "emotion": ["cozy", "warm", "comforting", "nostalgic"],
+    "scenes": ["cozy evenings", "reading nook", "winter nights"],
+    "tiktok_expression": "warm vanilla comfort"
+  },
+  "eucalyptus": {
+    "emotion": ["fresh", "clean", "invigorating", "spa-like"],
+    "scenes": ["shower", "bathroom", "morning routine"],
+    "tiktok_expression": "spa-day-at-home vibes"
+  },
+  "rose": {
+    "emotion": ["romantic", "soft", "feminine", "elegant"],
+    "scenes": ["gift giving", "vanity table", "date night prep"],
+    "tiktok_expression": "soft rose room energy"
+  }
+}

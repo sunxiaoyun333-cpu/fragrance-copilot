@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ViralGen icon">
+  <defs>
+    <linearGradient id="flameMain" x1="190" y1="62" x2="326" y2="258" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadcff"/>
+      <stop offset="0.46" stop-color="#9f79dd"/>
+      <stop offset="1" stop-color="#4026a5"/>
+    </linearGradient>
+    <linearGradient id="flameCut" x1="272" y1="173" x2="351" y2="298" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eadcff"/>
+      <stop offset="1" stop-color="#7445c9"/>
+    </linearGradient>
+    <linearGradient id="vBody" x1="141" y1="270" x2="358" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e3132"/>
+      <stop offset="0.55" stop-color="#17191a"/>
+      <stop offset="1" stop-color="#2b2d2e"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <path d="M257 58c-15 48 24 66 50 94 34 36 31 80-3 112-20 18-43 31-66 57 2-36 18-60 53-85-52 19-95 58-77 118-43-31-61-69-48-110 12-38 47-58 82-79 34-21 39-55 9-107z" fill="url(#flameMain)" filter="url(#softShadow)"/>
+  <path d="M302 212c29-18 51-43 59-82 14 55-10 92-52 119-26 17-45 38-49 80-22-51-3-90 42-117z" fill="url(#flameCut)"/>
+  <path d="M151 269h56c13 0 24 8 28 20l60 157 59-157c4-12 15-20 28-20h55c22 0 36 23 26 43L334 464c-8 16-24 26-42 26h-73c-18 0-34-10-42-26L126 312c-10-20 4-43 25-43z" fill="url(#vBody)" filter="url(#softShadow)"/>
+  <path d="M279 384c21-6 43-19 58-38-4 29-25 76-61 112-11-22-10-45 3-74z" fill="#151718"/>
+  <path d="M255 350c20 8 42 7 64-4-11 23-27 51-48 84-2-28-8-54-16-80z" fill="#d9b8ff"/>
+</svg>

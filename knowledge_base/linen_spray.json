@@ -1,0 +1,35 @@
+{
+  "product_type": "Linen Spray",
+  "aliases": ["linen spray", "pillow spray", "fabric spray", "床品喷雾"],
+  "pain_points": {
+    "self_care": [
+      "She wants her bed to feel fresh before sleep.",
+      "She wants a small nighttime ritual that makes her room feel calmer.",
+      "She wants bedding to smell clean between laundry days."
+    ]
+  },
+  "selling_points": [
+    "Refreshes bedding, pillows, curtains, and fabric surfaces.",
+    "Perfect for bedtime routines and guest room prep.",
+    "Makes the bedroom feel cleaner and more relaxing.",
+    "Simple ritual for a cozy night reset."
+  ],
+  "hooks": [
+    "The tiny step that makes my bed feel hotel-level",
+    "Spray this before bed and thank me later",
+    "My bedroom reset takes 10 seconds now",
+    "If clean sheets had a shortcut, this would be it"
+  ],
+  "video_templates": [
+    {
+      "name": "Bedtime Reset",
+      "structure": "Hook -> make bed -> spray pillows -> soft bedroom mood -> CTA"
+    }
+  ],
+  "visual_styles": [
+    "fresh white bedding",
+    "soft morning bedroom",
+    "cozy bedtime routine",
+    "clean girl nightstand"
+  ]
+}

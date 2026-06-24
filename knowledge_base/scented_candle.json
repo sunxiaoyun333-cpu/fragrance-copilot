@@ -1,0 +1,56 @@
+{
+  "product_type": "Scented Candle",
+  "aliases": ["scented candle", "soy candle", "aromatherapy candle", "jar candle", "香薰蜡烛"],
+  "pain_points": {
+    "gift": [
+      "She does not know what gift to buy that feels thoughtful.",
+      "She wants a gift that looks expensive but is still affordable.",
+      "She needs something pretty enough to photograph and post."
+    ],
+    "self_care": [
+      "She wants a low-cost way to unwind after work.",
+      "She wants her bedroom to feel like a spa.",
+      "She needs a bedtime ritual that feels calming and intentional."
+    ],
+    "home_ambiance": [
+      "Her apartment does not feel cozy enough.",
+      "She wants her space to smell amazing without much effort.",
+      "She wants home decor that also creates a mood."
+    ]
+  },
+  "selling_points": [
+    "Makes any room feel instantly cozy.",
+    "Clean burn and comfortable home atmosphere.",
+    "Aesthetic enough to leave out as home decor.",
+    "Great for night routines, bath time, and slow evenings.",
+    "Giftable, visual, and easy to understand in short video."
+  ],
+  "hooks": [
+    "POV: your room finally smells like a spa",
+    "This candle changed my whole night routine",
+    "The gift that looks way more expensive than it is",
+    "Why does my apartment suddenly feel like a luxury hotel",
+    "If your room needs a reset, start here"
+  ],
+  "video_templates": [
+    {
+      "name": "Cozy Night Routine",
+      "structure": "Hook -> lighting the candle -> room mood shot -> product close-up -> soft CTA"
+    },
+    {
+      "name": "Gift Unboxing",
+      "structure": "Hook -> unboxing -> packaging detail -> gifting scene -> CTA"
+    },
+    {
+      "name": "Room Transformation",
+      "structure": "Hook -> room before -> candle lit -> warm ambiance after -> CTA"
+    }
+  ],
+  "visual_styles": [
+    "warm candlelight bedroom",
+    "minimalist white flat lay",
+    "cozy rainy night aesthetic",
+    "soft luxury spa bathroom",
+    "clean girl apartment"
+  ]
+}

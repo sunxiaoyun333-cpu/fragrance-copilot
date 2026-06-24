@@ -1,0 +1,35 @@
+{
+  "product_type": "Home Fragrance Gift Set",
+  "aliases": ["gift set", "fragrance gift box", "candle gift set", "香薰礼盒"],
+  "pain_points": {
+    "gift": [
+      "She wants a thoughtful gift that does not feel generic.",
+      "She wants the packaging to look premium the second it is opened.",
+      "She needs a safe choice for birthdays, holidays, housewarming, or thank-you gifts."
+    ]
+  },
+  "selling_points": [
+    "Ready-to-gift presentation.",
+    "Looks premium and thoughtful without complicated shopping.",
+    "Perfect for holidays, birthdays, housewarming, and self-care gifts.",
+    "Multiple fragrance items create a complete experience."
+  ],
+  "hooks": [
+    "The gift that feels personal without overthinking it",
+    "If you never know what to buy her, save this",
+    "This is your sign to stop giving boring gifts",
+    "A self-care gift she will actually use"
+  ],
+  "video_templates": [
+    {
+      "name": "Gift Reveal",
+      "structure": "Hook -> ribbon/box detail -> open gift set -> each item close-up -> gifting CTA"
+    }
+  ],
+  "visual_styles": [
+    "premium gift box unboxing",
+    "holiday gifting table",
+    "soft ribbon and tissue paper",
+    "warm elegant product reveal"
+  ]
+}

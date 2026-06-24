@@ -1,0 +1,35 @@
+{
+  "product_type": "Room Spray",
+  "aliases": ["room spray", "home spray", "air freshener spray", "房间喷雾"],
+  "pain_points": {
+    "home_ambiance": [
+      "She wants her room to smell fresh immediately.",
+      "She needs a quick reset before guests arrive.",
+      "She wants her apartment to feel cleaner and more intentional."
+    ]
+  },
+  "selling_points": [
+    "Instant room refresh in seconds.",
+    "Easy to use before guests, after cleaning, or during a reset routine.",
+    "Portable and simple for daily home fragrance.",
+    "Great for bedrooms, bathrooms, closets, and living rooms."
+  ],
+  "hooks": [
+    "One spray and your room feels reset",
+    "The fastest way to make your apartment smell clean",
+    "Guests coming over? Do this first",
+    "My Sunday reset is not complete without this"
+  ],
+  "video_templates": [
+    {
+      "name": "Instant Reset",
+      "structure": "Hook -> messy/flat room mood -> spray action -> cozy after -> CTA"
+    }
+  ],
+  "visual_styles": [
+    "clean apartment reset",
+    "fresh linen bedroom",
+    "minimal bathroom shelf",
+    "Sunday reset aesthetic"
+  ]
+}

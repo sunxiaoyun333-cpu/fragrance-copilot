@@ -1,0 +1,22 @@
+{
+  "allowed_expressions": [
+    "creates a calming atmosphere",
+    "perfect for winding down",
+    "helps set the mood for sleep",
+    "makes your room feel cozy",
+    "refreshes your space",
+    "promotes a sense of calm",
+    "great for your self-care routine",
+    "makes your space feel warm and inviting"
+  ],
+  "forbidden_expressions": [
+    "cures anxiety",
+    "treats insomnia",
+    "heals depression",
+    "guaranteed better sleep",
+    "eliminates all stress",
+    "medical-grade relaxation",
+    "clinically proven",
+    "therapeutic benefits"
+  ]
+}

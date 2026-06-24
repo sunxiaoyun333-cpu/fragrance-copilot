@@ -1,0 +1,43 @@
+{
+  "product_type": "Reed Diffuser",
+  "aliases": ["reed diffuser", "diffuser sticks", "无火香薰", "藤条香薰"],
+  "pain_points": {
+    "home_ambiance": [
+      "She wants her room to smell good all day without lighting anything.",
+      "She wants low-maintenance fragrance for her apartment.",
+      "She needs a pretty decor piece that also refreshes the room."
+    ],
+    "gift": [
+      "She wants a safe and elegant gift for someone moving into a new home.",
+      "She needs a gift that feels useful but still aesthetic."
+    ]
+  },
+  "selling_points": [
+    "Flame-free fragrance for everyday home use.",
+    "Looks like decor while keeping the room fresh.",
+    "Perfect for bedrooms, bathrooms, entryways, and desks.",
+    "Low-maintenance scent without needing to burn anything."
+  ],
+  "hooks": [
+    "The easiest way to make your room smell expensive",
+    "No flame, no effort, just cozy room energy",
+    "Your bathroom is about to smell like a boutique hotel",
+    "This tiny diffuser makes the whole room feel put together"
+  ],
+  "video_templates": [
+    {
+      "name": "Room Refresh",
+      "structure": "Hook -> place diffuser -> flip reeds -> room details -> CTA"
+    },
+    {
+      "name": "Apartment Upgrade",
+      "structure": "Hook -> before room -> diffuser setup -> aesthetic after -> CTA"
+    }
+  ],
+  "visual_styles": [
+    "clean bathroom counter",
+    "minimalist bedside table",
+    "hotel-inspired entryway",
+    "soft neutral home decor"
+  ]
+}

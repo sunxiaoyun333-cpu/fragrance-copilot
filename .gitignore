@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.log
+.vercel/
+debug_1688_extract.txt
+etc/
+share/
