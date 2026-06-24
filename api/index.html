@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fragrance Copilot</title>
+  <style>
+    :root{--bg:#f7f4ed;--panel:#fffdf9;--line:#e6ddd0;--ink:#1f2023;--muted:#7d8ba0;--blue:#2f8ff0;--soft:#eaf3ff;--purple:#7650d8}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Microsoft YaHei",sans-serif}
+    button,input,textarea,select{font:inherit} .app{min-height:100vh;display:grid;grid-template-columns:280px 1fr}
+    aside{border-right:1px solid var(--line);padding:12px 20px 28px;background:#f5f1e9;position:sticky;top:0;height:100vh}
+    .logo{width:80px;height:80px;margin:0 auto 8px;display:grid;place-items:center;font-size:48px;font-weight:900;color:var(--purple)}
+    .brand{text-align:center;font-size:14px;color:#7890ad;margin-bottom:32px}.side-title{font-weight:800;margin:26px 0 14px}
+    .step{height:58px;display:flex;align-items:center;justify-content:center;font-weight:700;margin:8px 0;border:1px solid transparent}
+    .step.active{background:var(--soft);border-color:#acd2ff;border-radius:28px}
+    main{padding:48px clamp(24px,5vw,72px);max-width:1180px;width:100%}.eyebrow{color:#8ca1bc;margin-top:0}
+    h1{font-size:42px;margin:0 0 10px;letter-spacing:0}.progress{display:flex;align-items:center;gap:12px;margin:42px 0;background:var(--panel);padding:28px;border:1px solid var(--line);border-radius:8px}
+    .dot{flex:0 0 44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#f4f0e8;border:1px solid var(--line);font-weight:800}
+    .dot.on{background:var(--blue);color:white;box-shadow:0 0 0 6px #d8ebff}.bar{height:1px;background:var(--line);flex:1}
+    .panel{background:var(--panel);border:1px solid var(--line);padding:26px;border-radius:8px;box-shadow:0 18px 40px rgba(75,61,40,.08)}
+    label{display:block;font-weight:700;margin:18px 0 8px}textarea,input,select{width:100%;border:1px solid var(--line);background:white;border-radius:7px;padding:13px;color:var(--ink)}
+    textarea{min-height:110px;resize:vertical}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    button{border:0;border-radius:7px;padding:14px 18px;font-weight:800;cursor:pointer}.primary{background:#292a2d;color:white;width:100%;margin-top:22px}.primary:disabled{opacity:.45;cursor:wait}
+    .status{margin-top:18px;padding:15px;border-radius:7px;display:none;white-space:pre-wrap}.status.show{display:block}.error{background:#ffe2dc;color:#852a20}.success{background:#e2f4e2;color:#205d2d}
+    .result{display:none;margin-top:24px}.result.show{display:block}.tabs{display:flex;gap:8px;overflow:auto;border-bottom:1px solid var(--line)}
+    .tab{background:transparent;padding:12px;color:#48505b;white-space:nowrap}.tab.on{color:var(--ink);border-bottom:3px solid #ff5b5f}
+    pre{white-space:pre-wrap;word-break:break-word;background:#f5f6f8;padding:18px;border-radius:7px;max-height:520px;overflow:auto}.actions{display:flex;gap:12px}.actions button{flex:1}
+    @media(max-width:760px){.app{display:block}aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}.steps{display:flex;overflow:auto}.step{min-width:110px}.grid{grid-template-columns:1fr}main{padding:28px 18px}h1{font-size:32px}.progress{padding:18px}.bar{min-width:12px}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="logo">V</div><div class="brand">Fragrance Copilot</div>
+    <div class="side-title">项目流程</div>
+    <div class="steps"><div class="step active">产品输入</div><div class="step">产品档案</div><div class="step">营销方案</div></div>
+  </aside>
+  <main>
+    <h1>香氛营销工作区</h1><p class="eyebrow">从商品链接生成产品档案与 TikTok 营销方案。</p>
+    <div class="progress"><div class="dot on">1</div><div class="bar"></div><div class="dot">2</div><div class="bar"></div><div class="dot">3</div></div>
+    <section class="panel">
+      <h2>定义产品参数</h2>
+      <label for="source">商品链接 / 分享文本</label>
+      <textarea id="source" placeholder="粘贴完整商品 URL 或 1688 分享文本"></textarea>
+      <div class="grid">
+        <div><label for="country">目标市场</label><select id="country"><option>United States</option><option>Canada</option><option>Mexico</option></select></div>
+        <div><label for="age">目标年龄</label><select id="age"><option>18-35</option><option>18-24</option><option>25-35</option><option>25-44</option></select></div>
+      </div>
+      <label for="goal">内容目标</label>
+      <select id="goal"><option value="natural_seeding">自然种草</option><option value="shop_conversion">店铺转化</option><option value="ai_video">AI 视频</option><option value="gift_marketing">礼物营销</option></select>
+      <button class="primary" id="profileBtn">生成产品档案</button>
+      <div id="status" class="status"></div>
+    </section>
+    <section id="result" class="result panel">
+      <div class="tabs"><button class="tab on" data-view="profile">产品档案</button><button class="tab" data-view="plan">营销方案</button></div>
+      <pre id="output"></pre>
+      <div class="actions"><button id="planBtn" class="primary">生成营销方案</button><button id="downloadBtn">下载结果</button></div>
+    </section>
+  </main>
+</div>
+<script>
+  let profile=null, plan=null, view="profile";
+  const $=id=>document.getElementById(id);
+  const payload=()=>({source:$("source").value,country:$("country").value,age_range:$("age").value,goal:$("goal").value});
+  function status(message,type){const el=$("status");el.textContent=message;el.className=`status show ${type}`}
+  function render(){const data=view==="profile"?profile:plan;$("output").textContent=JSON.stringify(data||{},null,2)}
+  async function request(url,body,button){button.disabled=true;try{const res=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});const data=await res.json();if(!res.ok)throw new Error(data.detail||"请求失败");return data}finally{button.disabled=false}}
+  $("profileBtn").onclick=async()=>{if(!$("source").value.trim())return status("请输入商品链接。","error");status("正在读取商品并生成档案，请稍候…","success");try{profile=await request("/api/profile",payload(),$("profileBtn"));view="profile";$("result").classList.add("show");render();status("产品档案已生成。","success")}catch(e){status(e.message,"error")}};
+  $("planBtn").onclick=async()=>{if(!profile)return status("请先生成产品档案。","error");status("正在生成营销方案…","success");try{plan=await request("/api/plan",{profile,...payload()},$("planBtn"));view="plan";document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.view==="plan"));render();status("营销方案已生成。","success")}catch(e){status(e.message,"error")}};
+  document.querySelectorAll(".tab").forEach(tab=>tab.onclick=()=>{view=tab.dataset.view;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x===tab));render()});
+  $("downloadBtn").onclick=()=>{const blob=new Blob([JSON.stringify({profile,plan},null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="fragrance-copilot-plan.json";a.click();URL.revokeObjectURL(a.href)};
+</script>
+</body></html>
